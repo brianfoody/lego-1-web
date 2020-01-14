@@ -54,16 +54,16 @@ jobs:
             source $BASH_ENV
 
       - run:
-          name: Bootstrap
-          command: npm run bootstrap
+          name: Building CDK
+          command: npm run build:cdk
 
       - run:
           name: Info
           command: ls -la /home/circleci/repo
 
       - run:
-          name: Building CDK
-          command: npm run build:cdk
+          name: Bootstrap
+          command: npm run bootstrap
 
       - run:
           name: Deploy
