@@ -18,7 +18,7 @@
     "experimentalDecorators": true,
     "strictPropertyInitialization": false,
     "moduleResolution": "node",
-    "outDir": "lib"
+    "outDir": "lib/cdk"
   },
   "include": ["cdk"]
 }
