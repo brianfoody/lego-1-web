@@ -1,13 +1,17 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "module": "commonjs",
-    "lib": ["dom", "esnext"],
+    "module": "esnext",
+    "lib": [
+      "dom",
+      "esnext"
+    ],
     "declaration": true,
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
     "noImplicitThis": true,
+    "emitDecoratorMetadata": true,
     "alwaysStrict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": false,
@@ -18,7 +22,18 @@
     "experimentalDecorators": true,
     "strictPropertyInitialization": false,
     "moduleResolution": "node",
-    "outDir": "./lib/cdk"
+    "outDir": "lib",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react"
   },
-  "include": ["cdk"]
+  "include": [
+    "cdk"
+  ]
 }

@@ -55,7 +55,7 @@ jobs:
 
       - run:
           name: Building CDK
-          command: npm run build:cdk && ls -la /home/circleci/repo
+          command: npm run build:cdk
 
       - run:
           name: Bootstrap
