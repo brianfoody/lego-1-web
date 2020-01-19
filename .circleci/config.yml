@@ -24,6 +24,10 @@ jobs:
 
       - *install-awscli
 
+      - run:
+          name: Clean
+          command: npm run clean
+
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
