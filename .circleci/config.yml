@@ -43,6 +43,10 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run:
+          name: Configure AWS env.
+          command: npm run configure
+
+      - run:
           name: Running unit tests
           command: npm run test
 
@@ -60,18 +64,6 @@ jobs:
       - run:
           name: Building CDK
           command: npm run build:cdk
-
-      - run:
-          name: List
-          command: ls -la
-
-      - run:
-          name: List 2
-          command: ls -la lib
-
-      - run:
-          name: Bootstrap
-          command: npm run bootstrap
 
       - run:
           name: Deploy
