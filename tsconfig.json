@@ -1,11 +1,8 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "module": "esnext",
-    "lib": [
-      "dom",
-      "esnext"
-    ],
+    "module": "commonjs",
+    "lib": ["dom", "esnext"],
     "declaration": true,
     "strict": true,
     "noImplicitAny": true,
@@ -22,18 +19,7 @@
     "experimentalDecorators": true,
     "strictPropertyInitialization": false,
     "moduleResolution": "node",
-    "outDir": "lib",
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react"
+    "outDir": "lib"
   },
-  "include": [
-    "cdk"
-  ]
+  "include": ["cdk"]
 }
