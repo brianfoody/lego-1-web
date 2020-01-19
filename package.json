@@ -18,7 +18,7 @@
   "scripts": {
     "clean": "rm -rf lib build node_modules",
     "start": "react-scripts start",
-    "bootstrap": "cdk bootstrap 897386833887/ap-southeast-2",
+    "bootstrap": "cdk bootstrap",
     "build": "react-scripts build",
     "build:cdk": "tsc --p tsconfig.cdk.json",
     "deploy": "cdk deploy --require-approval never",
