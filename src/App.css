@@ -1,12 +1,5 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -17,6 +10,50 @@
   color: white;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  margin-bottom: 16px;
+}
+
+input {
+  border: none;
+  height: 35px;
+  width: 100%;
+  background-color: #eee;
+  margin-bottom: 24px;
+}
+
+input[type="submit"] {
+  margin-left: 0px;
+  margin-top: 24px;
+  display: block;
+  height: 50px;
+  width: 100%;
+  width: 300px;
+  background-color: aquamarine;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+}
+
 .App-link {
   color: #09d3ac;
+}
+
+.submitLoader {
+  height: 50px;
+  width: 300px;
+}
+.successMessage {
+  color: black;
+  padding: 25px;
+  background-color: aquamarine;
+  width: 250px;
 }
