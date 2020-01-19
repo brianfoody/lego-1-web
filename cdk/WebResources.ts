@@ -1,4 +1,4 @@
-import { Construct, RemovalPolicy } from "@aws-cdk/core";
+import { Construct, RemovalPolicy, CfnOutput } from "@aws-cdk/core";
 import { Bucket, BucketEncryption } from "@aws-cdk/aws-s3";
 import { BucketDeployment, Source } from "@aws-cdk/aws-s3-deployment";
 
@@ -17,6 +17,10 @@ export class WebResources extends Construct {
     new BucketDeployment(this, "DeployWebsite", {
       sources: [Source.asset("./build")],
       destinationBucket: websiteBucket
+    });
+
+    new CfnOutput(this, "WebsiteBucketUrl", {
+      value: websiteBucket.bucketWebsiteUrl
     });
   }
 }
