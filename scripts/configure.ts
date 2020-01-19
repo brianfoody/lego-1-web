@@ -28,7 +28,7 @@ const awsConfigure = async () => {
 
   fs.writeFileSync(
     awsConfigPath,
-    `export const API_URL=${apiUrl.OutputValue}`,
+    `export const API_URL="${apiUrl.OutputValue}"`,
     "utf8"
   );
 };
